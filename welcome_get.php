@@ -7,7 +7,7 @@
   </head>
   <body>
       Bienvenido/a al Sitio <?php echo $_GET["name"]; ?><br>
-      Tu Email es: <?php echo $_GET["email"]; ?>
+      Tu Email es: <?php echo $_GET["email"]; ?><br>
     <?php
       //echo "<h1> Hola Mundo </h1>";
       for($i=0; $i<100; $i++){
