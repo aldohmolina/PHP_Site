@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
     <?php
       echo "<h1> Hola Mundo </h1>"
       for($i=0; $i<100; $i++){
@@ -16,5 +9,3 @@
         echo "="
       }
      ?>
-  </body>
-</html>
