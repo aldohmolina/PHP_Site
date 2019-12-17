@@ -5,7 +5,8 @@
   </head>
   <body>
     <h1> Bienvenido al sitio </h1>
-    <h6> Por favor logeate </h6>
+    <br>
+    <h3> Por favor logeate </h3>
     
   <form action="welcome_get.php" method="post">
     Nombre:   <input type="text" name="name"><br><br>
