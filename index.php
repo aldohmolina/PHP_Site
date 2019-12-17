@@ -4,8 +4,7 @@
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
-    <h1> Bienvenido al sitio </h1>
-    <br>
+    <h2> Bienvenido al sitio </h2>
     <h3> Por favor logeate </h3>
     
   <form action="welcome_get.php" method="post">
