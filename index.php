@@ -7,7 +7,7 @@
     <h1> Bienvenido al sitio </h1>
     <h6> Por favor logeate </h6>
     
-  <form action="welcome_get.php" method="get">
+  <form action="welcome_get.php" method="post">
     Nombre:   <input type="text" name="name"><br><br>
     E-mail:   <input type="text" name="email"><br><br>
   <input type="submit">
