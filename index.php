@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
   <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Sitio Aldo XS </title>
   </head>
   <body>
     <?php
