@@ -6,8 +6,10 @@
     <title>Sitio Aldo XS </title>
   </head>
   <body>
+      Bienvenido/a al Sitio <?php echo $_GET["name"]; ?><br>
+      Tu Email es: <?php echo $_GET["email"]; ?>
     <?php
-      echo "<h1> Hola Mundo </h1>";
+      //echo "<h1> Hola Mundo </h1>";
       for($i=0; $i<100; $i++){
         echo "=";
       }
