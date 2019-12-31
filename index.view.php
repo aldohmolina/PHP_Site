@@ -18,14 +18,11 @@
               <div class="alert error">
                   <?php echo $errores; ?>
               </div>
-          <?php elseif($enviado): ?>
-              <div class="alert sucess">
-                  <p>Enviado Correctamente</p>
-              </div>
-          <?php endif ?>
-            <div class="alert success">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            </div>
+            <?php elseif($enviado): ?>
+                <div class="alert sucess">
+                    <p>Enviado Correctamente</p>
+                </div>
+            <?php endif ?>
             <input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
         </form>
     </div>
