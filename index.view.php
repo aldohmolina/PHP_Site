@@ -14,7 +14,9 @@
             <input type="text" class="form-control" id="correo" name="correo" placeholder="Correo: "value="">
             
             <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje:"></textarea>
-
+            <div class="alert error">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+            </div>
             <input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
         </form>
     </div>
