@@ -14,7 +14,16 @@ if (isset($_POST['submit'])) {
     } else {
       $errores .= 'Por favor ingresa un nombre <br />';
     }
-    
+
+    if(!empty($correo)){
+      $correo = trim($correo);
+      $correo = filter_var($correo,FILTER_SANITIZE_EMAIL);
+      if(!filter_var($correo,FILTER_VALIDATE_EMAIL)){
+        $errores .= 'Por favor ingresa un correo valido <br />';
+      }
+    } else {
+        $errores .= 'Por favor ingresa un correo <br />';
+    }
 }
 
 require 'index.view.php';
