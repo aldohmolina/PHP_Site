@@ -53,10 +53,10 @@ form textarea:focus{
 }
 
 
-form input[type = "text"]:over,
-form input[type = "email"]:over,
-form input[type = "password"]:over,
-form textarea:over{
+form input[type = "text"]:hover,
+form input[type = "email"]:hover,
+form input[type = "password"]:hover,
+form textarea:hover{
     border: 1px solid #3F51B5;
     padding: 15px;
 }
