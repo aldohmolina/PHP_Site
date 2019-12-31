@@ -48,10 +48,10 @@ if (isset($_POST['submit'])) {
       $params = array(
           'api_user' => $user,
           'api_key' => $pass,
-          'to' => $enviar_a//'aldohmolina@gmail.com',
+          'to' => $enviar_a,//'aldohmolina@gmail.com',
           'subject' => $asunto,//'testing from curl',
-          'html' => $mensaje_preparado//'testing body_html',
-          'text' => //'testing body',
+          'html' => $mensaje_preparado,//'testing body_html',
+          'text' => $mensaje_preparado,//'testing body',
           'from' => $correo,//'anna@contoso.com',
       );
 
