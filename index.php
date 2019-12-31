@@ -48,11 +48,11 @@ if (isset($_POST['submit'])) {
       $params = array(
           'api_user' => $user,
           'api_key' => $pass,
-          'to' => 'aldohmolina@gmail.com',
-          'subject' => 'testing from curl',
-          'html' => 'testing body_html',
-          'text' => 'testing body',
-          'from' => 'anna@contoso.com',
+          'to' => $enviar_a//'aldohmolina@gmail.com',
+          'subject' => $asunto,//'testing from curl',
+          'html' => $mensaje_preparado//'testing body_html',
+          'text' => //'testing body',
+          'from' => $correo,//'anna@contoso.com',
       );
 
     $request = $url.'api/mail.send.json';
@@ -70,14 +70,15 @@ if (isset($_POST['submit'])) {
     curl_setopt($session, CURLOPT_HEADER, false);
     curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 
- // obtain response
- $response = curl_exec($session);
- curl_close($session);
+     // obtain response
+     $response = curl_exec($session);
+     curl_close($session);
 
- // print everything out
- print_r($response);
-      $enviado = 'true';
-    }
+     // print everything out
+     print_r($response);
+     if($response['message'] == 'success')
+          $enviado = 'true';
+      }
 }
 
 require 'index.view.php';
