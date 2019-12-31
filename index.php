@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
     }
 
     if(!$errores){
-      $enviar_a = 'dibarra@cenagas.gob.mx';
+      $enviar_a = 'aldohmolina@gmail.com';
       $asunto = 'Mail send from anonimus';
       $mensaje_preparado = "From: $nombre \n";
       $mensaje_preparado .= "Mail: $correo \n";
