@@ -24,6 +24,25 @@ if (isset($_POST['submit'])) {
     } else {
         $errores .= 'Por favor ingresa un correo <br />';
     }
+
+    if (!empty($mensaje)) {
+      $mensaje = htmlspecialchars($mensaje);
+      $mensaje = trim($mensaje);
+      $mensaje = stripslashes($mensaje);
+    } else {
+      $errores .= 'Por favor ingresa un mensaje <br />';
+    }
+
+    if(!$errores){
+      $enviar_a = 'dibarra@cenagas.gob.mx';
+      $asunto = 'Mail send from anonimus';
+      $mensaje_preparado = "From: $nombre \n";
+      $mensaje_preparado .= "Mail: $correo \n";
+      $mensaje_preparado .= "Message: " . $mensaje;
+
+      mail($enviar_a, $asunto, $mensaje_preparado);
+      $enviado = 'true';
+    }
 }
 
 require 'index.view.php';
