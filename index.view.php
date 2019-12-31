@@ -14,9 +14,15 @@
             <input type="text" class="form-control" id="correo" name="correo" placeholder="Correo: "value="">
             
             <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje:"></textarea>
-            <div class="alert error">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-            </div>
+            <?php if(!empty($errores)): ?>
+              <div class="alert error">
+                  <?php echo $errores; ?>
+              </div>
+          <?php elseif($enviado): ?>
+              <div class="alert sucess">
+                  <p>Enviado Correctamente</p>
+              </div>
+          <?php endif ?>
             <div class="alert success">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             </div>
