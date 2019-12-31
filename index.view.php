@@ -17,6 +17,9 @@
             <div class="alert error">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
             </div>
+            <div class="alert success">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            </div>
             <input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
         </form>
     </div>
