@@ -42,15 +42,15 @@ if (isset($_POST['submit'])) {
 
       //mail($enviar_a, $asunto, $mensaje_preparado);
       $url = 'https://api.sendgrid.com/';
-      $user = 'azure_d7568cfda87fb8c3a865cafca699db03@azure.com';
-      $pass = 'H3rn4nd3z';
+      $user = '';
+      $pass = '';
 
       $params = array(
           'api_user' => $user,
           'api_key' => $pass,
           'to' => $enviar_a,//'aldohmolina@gmail.com',
           'subject' => $asunto,//'testing from curl',
-          'html' => $mensaje_preparado,//'testing body_html',
+          //'html' => $mensaje_preparado,//'testing body_html',
           'text' => $mensaje_preparado,//'testing body',
           'from' => $correo,//'anna@contoso.com',
       );
@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
 
      // print everything out
      print_r($response);
-     if($response['message'] == 'success'){$enviado = 'true';}
+     if($response===TRUE){$enviado = 'true';}
     }
 }
 require 'index.view.php';
