@@ -19,7 +19,7 @@
                   <?php echo $errores; ?>
               </div>
             <?php elseif($enviado): ?>
-                <div class="alert sucess">
+                <div class="alert success">
                     <p>Enviado Correctamente</p>
                 </div>
             <?php endif ?>
