@@ -76,11 +76,8 @@ if (isset($_POST['submit'])) {
 
      // print everything out
      print_r($response);
-     if($response['message'] == 'success'){
-          $enviado = 'true';
-     }
+     if($response['message'] == 'success'){$enviado = 'true';}
     }
 }
-
 require 'index.view.php';
 ?>
