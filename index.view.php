@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="estilos.css">
     <title>Formulario Contactos</title>
   </head>
   <body>
