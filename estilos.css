@@ -52,6 +52,15 @@ form textarea:focus{
     padding: 15px;
 }
 
+
+form input[type = "text"]:over,
+form input[type = "email"]:over,
+form input[type = "password"]:over,
+form textarea:over{
+    border: 1px solid #3F51B5;
+    padding: 15px;
+}
+
 form textarea:{
     max-width: 100%;
     min-width: 100%;
