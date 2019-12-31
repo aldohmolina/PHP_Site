@@ -12,7 +12,8 @@
             <input type="text" class="form-control"  id="nombre" name="nombre" placeholder="Nombre: "value="">
             <input type="text" class="form-control" id="correo" name="correo" placeholder="Correo: "value="">
 
-            <textarea name="mensaje" class="form-control" id="mensaje" placeholder="mensaje"></textarea>
+            <textarea name="mensaje" class="form-control" id="mensaje" placeholder="Mensaje"></textarea>
+            <input type="submit" name="submit" class="btn btn-primary" value="Enviar Correo">
         </form>
     </div>
   </body>
